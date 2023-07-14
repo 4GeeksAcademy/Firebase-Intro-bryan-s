@@ -2,11 +2,13 @@ import { useEffect } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
+const backendHostUrl = 'https://hyllus478-fictional-space-spork-xjp7745gjvw34pp-5001.preview.app.github.dev/'
+
 function App() {
   useEffect(() => {
     (async () => {
       const res = await fetch(
-        `http://127.0.0.1:5001/geeks-firebase-72e6d/us-central1/getDayWeather`
+        "http://127.0.0.1:5001/geeks-firebase-72e6d/us-central1/helloWorld"
       );
 
       const data = await res.json();
